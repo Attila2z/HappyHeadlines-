@@ -1,0 +1,133 @@
+{
+  "configuration" : {
+    "scope" : "SoftwareSystem"
+  },
+  "description" : "C1 - System Context",
+  "documentation" : { },
+  "id" : 1,
+  "lastModifiedAgent" : "structurizr-ui",
+  "lastModifiedDate" : "2026-02-17T02:23:28Z",
+  "model" : {
+    "people" : [ {
+      "description" : "Writes drafts and publishes finished articles.",
+      "id" : "1",
+      "name" : "Publisher",
+      "properties" : {
+        "structurizr.dsl.identifier" : "publisher"
+      },
+      "relationships" : [ {
+        "description" : "Drafts, reviews, publishes articles",
+        "destinationId" : "3",
+        "id" : "4",
+        "sourceId" : "1",
+        "tags" : "Relationship",
+        "technology" : "Web Browser (HTTPS)"
+      } ],
+      "tags" : "Element,Person"
+    }, {
+      "description" : "Reads articles, comments, subscribes, and shares.",
+      "id" : "2",
+      "name" : "Reader",
+      "properties" : {
+        "structurizr.dsl.identifier" : "reader"
+      },
+      "relationships" : [ {
+        "description" : "Reads articles, comments, subscribes",
+        "destinationId" : "3",
+        "id" : "5",
+        "sourceId" : "2",
+        "tags" : "Relationship",
+        "technology" : "Web Browser (HTTPS)"
+      } ],
+      "tags" : "Element,Person"
+    } ],
+    "softwareSystems" : [ {
+      "description" : "Positive news website + newsletter platform.",
+      "documentation" : { },
+      "id" : "3",
+      "name" : "Happy Headlines",
+      "properties" : {
+        "structurizr.dsl.identifier" : "hh"
+      },
+      "tags" : "Element,Software System"
+    } ]
+  },
+  "name" : "Happy Headlines",
+  "properties" : {
+    "structurizr.inspection.info" : "0",
+    "structurizr.inspection.ignore" : "0",
+    "structurizr.inspection.error" : "0",
+    "structurizr.inspection.warning" : "0",
+    "structurizr.dsl" : "d29ya3NwYWNlICJIYXBweSBIZWFkbGluZXMiICJDMSAtIFN5c3RlbSBDb250ZXh0IiB7CgogIG1vZGVsIHsKICAgIHB1Ymxpc2hlciA9IHBlcnNvbiAiUHVibGlzaGVyIiAiV3JpdGVzIGRyYWZ0cyBhbmQgcHVibGlzaGVzIGZpbmlzaGVkIGFydGljbGVzLiIKICAgIHJlYWRlciAgICA9IHBlcnNvbiAiUmVhZGVyIiAiUmVhZHMgYXJ0aWNsZXMsIGNvbW1lbnRzLCBzdWJzY3JpYmVzLCBhbmQgc2hhcmVzLiIKCiAgICBoaCA9IHNvZnR3YXJlU3lzdGVtICJIYXBweSBIZWFkbGluZXMiICJQb3NpdGl2ZSBuZXdzIHdlYnNpdGUgKyBuZXdzbGV0dGVyIHBsYXRmb3JtLiIKCiAgICAKCiAgICBwdWJsaXNoZXIgLT4gaGggIkRyYWZ0cywgcmV2aWV3cywgcHVibGlzaGVzIGFydGljbGVzIiAiV2ViIEJyb3dzZXIgKEhUVFBTKSIKICAgIHJlYWRlciAgICAtPiBoaCAiUmVhZHMgYXJ0aWNsZXMsIGNvbW1lbnRzLCBzdWJzY3JpYmVzIiAiV2ViIEJyb3dzZXIgKEhUVFBTKSIKCiAgICAKICB9CgogIHZpZXdzIHsKICAgIHN5c3RlbUNvbnRleHQgaGggIkMxIiAiU3lzdGVtIENvbnRleHQiIHsKICAgICAgaW5jbHVkZSBwdWJsaXNoZXIKICAgICAgaW5jbHVkZSByZWFkZXIKICAgICAgaW5jbHVkZSBoaAogICAgICAKICAgICAgYXV0b2xheW91dCBscgogICAgfQoKICAgIHN0eWxlcyB7CiAgICAgIGVsZW1lbnQgIlBlcnNvbiIgewogICAgICAgIHNoYXBlIFBlcnNvbgogICAgICAgIGJhY2tncm91bmQgIzA4NDI3YgogICAgICAgIGNvbG9yICNmZmZmZmYKICAgICAgICBzdHJva2UgIzA1MmU1YgogICAgICAgIHN0cm9rZVdpZHRoIDIKICAgICAgICBmb250U2l6ZSAyOAogICAgICAgIG1ldGFkYXRhIHRydWUKICAgICAgICBkZXNjcmlwdGlvbiBmYWxzZQogICAgICB9CgogICAgICBlbGVtZW50ICJTb2Z0d2FyZSBTeXN0ZW0iIHsKICAgICAgICBzaGFwZSBSb3VuZGVkQm94CiAgICAgICAgYmFja2dyb3VuZCAjMTE2OGJkCiAgICAgICAgY29sb3IgI2ZmZmZmZgogICAgICAgIHN0cm9rZSAjMGI0ZjhhCiAgICAgICAgc3Ryb2tlV2lkdGggMgogICAgCiAgICAgICAgZm9udFNpemUgMjgKICAgICAgICBtZXRhZGF0YSB0cnVlCiAgICAgICAgZGVzY3JpcHRpb24gZmFsc2UKICAgICAgfQoKICAgICAgCgogICAgICAKICAgIH0KICB9CgogIGNvbmZpZ3VyYXRpb24gewogICAgc2NvcGUgc29mdHdhcmVTeXN0ZW0KICB9Cn0="
+  },
+  "views" : {
+    "configuration" : {
+      "branding" : { },
+      "lastSavedView" : "C1",
+      "metadataSymbols" : "SquareBrackets",
+      "styles" : {
+        "elements" : [ {
+          "background" : "#08427b",
+          "color" : "#ffffff",
+          "description" : false,
+          "fontSize" : 28,
+          "metadata" : true,
+          "shape" : "Person",
+          "stroke" : "#052e5b",
+          "strokeWidth" : 2,
+          "tag" : "Person"
+        }, {
+          "background" : "#1168bd",
+          "color" : "#ffffff",
+          "description" : false,
+          "fontSize" : 28,
+          "metadata" : true,
+          "shape" : "RoundedBox",
+          "stroke" : "#0b4f8a",
+          "strokeWidth" : 2,
+          "tag" : "Software System"
+        } ]
+      },
+      "terminology" : { }
+    },
+    "systemContextViews" : [ {
+      "automaticLayout" : {
+        "applied" : true,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "description" : "System Context",
+      "dimensions" : {
+        "height" : 1500,
+        "width" : 1550
+      },
+      "elements" : [ {
+        "id" : "1",
+        "x" : 199,
+        "y" : 143
+      }, {
+        "id" : "2",
+        "x" : 199,
+        "y" : 843
+      }, {
+        "id" : "3",
+        "x" : 899,
+        "y" : 543
+      } ],
+      "enterpriseBoundaryVisible" : true,
+      "key" : "C1",
+      "name" : "System Context View: Happy Headlines",
+      "order" : 1,
+      "relationships" : [ {
+        "id" : "4"
+      }, {
+        "id" : "5"
+      } ],
+      "softwareSystemId" : "3"
+    } ]
+  }
+}
