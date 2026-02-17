@@ -198,9 +198,13 @@ workspace "Happy Headlines" "C1 + C2 diagrams" {
       }
     }
   }
-
+    
   configuration {
     scope softwareSystem
+    
   }
+   
+
+  
   
 }
