@@ -1,0 +1,42 @@
+services:
+
+  # PostgreSQL Database (your existing config, kept exactly the same)
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: articles
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  # ASP.NET Core ArticleService
+  app:
+    build:
+      context: ../src/ArticleService
+      dockerfile: Dockerfile
+    container_name: article_service
+    restart: always
+    ports:
+      - "5000:8080"
+    environment:
+      ConnectionStrings__DefaultConnection: "Host=postgres;Port=5432;Database=articles;Username=postgres;Password=postgres"
+    depends_on:
+      - postgres
+
+  # Nginx reverse proxy
+  nginx:
+    image: nginx:alpine
+    container_name: nginx_proxy
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx:/etc/nginx/conf.d
+    depends_on:
+      - app
+
+volumes:
+  pgdata:
